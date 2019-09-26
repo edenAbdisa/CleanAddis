@@ -23,4 +23,3 @@ class Firebase{
     }   
 }
 export default Firebase;
-export default address;
