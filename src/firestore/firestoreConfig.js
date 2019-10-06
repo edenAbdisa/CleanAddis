@@ -12,28 +12,7 @@ const config = {
     messagingSenderId: "871168571489",
     appId: "1:871168571489:web:3b227f6f6403cb0c3e5220"
 }
-       app.initializeApp(config);
-       const db = app.firestore();
+export const firestore=app.initializeApp(config);
+const db = app.firestore();
 
-        db.collection('address').add({     city:"harar",
-                                                    country:"Ethiopia",
-                                                    landmark:"century",
-                                                    subCity:"yeka",
-                                                    woreda:"08"
-                                               	});
-
-/*class Firebase extends React.Component{
-    constructor(props){
-    super(props)
-       app.initializeApp(config);
-       const db = app.firestore();
-    }
-    render() {
-        const address = db.collection('address').get();
-        console.log("-->"+address)
-        return (
-            <H1> hgfkhfjh </H1>
-        )
-    }
-}
-export default Firebase;*/
+export default db;
