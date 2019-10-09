@@ -1,10 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Signup from "./src/Account/SignUp";
+//import Signup from "./src/Account/SignUp";
+import Article from './src/Article/article.js';
 export default function App() {
   return (
       <View style={styles.container}>
-       <Signup/>
+       <Article/>
           <Text>Open up App.js to start worJHKJHking on your app!</Text>
 
        </View>
